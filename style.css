@@ -1,0 +1,424 @@
+:root {
+    --amarillo: #ffcf3d;
+    --mostaza: #ffae11;
+    --marron: #a84e13;
+    --marron-oscuro: #6f3900;
+    --crema: #fff7dd;
+}
+
+body {
+    background-color: var(--mostaza);
+    color: var(--marron-oscuro);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: transparent;
+    text-align: center;
+    padding: 0;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header nav a {
+    display: inline-block;
+    background-color: var(--crema);
+    color: var(--marron-oscuro);
+    border: 2px solid var(--marron-oscuro);
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-weight: bold;
+    margin: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    background-color: var(--marron);
+    color: var(--crema);
+    border-radius: 8px;
+}
+
+section {
+    background-color: var(--amarillo);
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 900px;
+    border-radius: 15px;
+}
+
+section h2 {
+    color: var(--marron-oscuro);
+    text-align: center;
+}
+
+section p {
+    color: var(--marron);
+    line-height: 1.6;
+    text-align: center;
+}
+
+.introduccion {
+    background-color: var(--amarillo);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto 30px;
+}
+
+#sobre-mi,
+#portafolio,
+#redes,
+#servidor-discord {
+    background-color: transparent;
+}
+
+/* Inicio */
+.presentacion {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: 75vh;
+    padding: 30px;
+    background-color: var(--amarillo);
+    border-radius: 12px;
+}
+
+.informacion {
+    width: 40%;
+}
+
+.informacion h2 {
+    color: var(--marron-oscuro);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.informacion p {
+    color: var(--marron);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.imagen-principal {
+    width: 60%;
+    text-align: center;
+}
+
+.imagen-principal img {
+    width: 80%;
+    height: auto;
+    display: inline-block;
+    border-radius: 12px;
+    border: 3px solid var(--mostaza);
+    box-shadow: 0 5px 15px #00000055;
+}
+
+/*Sobre mí*/
+.introduccion img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    margin: 20px auto 0;
+}
+
+.horario {
+    background-color: var(--amarillo);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.horario img {
+    width: 700px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/*Portafolio*/
+.comisiones {
+    background-color: var(--amarillo);
+    border: 2px solid var(--marron-oscuro);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 25px auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+.comisiones a {
+    display: inline-block;
+    background-color: var(--crema);
+    color: var(--marron-oscuro);
+    border: 3px solid var(--marron-oscuro);
+    box-sizing: border-box;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.comisiones a:hover {
+    background-color: var(--marron);
+    color: var(--crema);
+    transform: scale(1.05);
+}
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.obra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--amarillo);
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid var(--marron);
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+}
+
+.obra h3 {
+    color: var(--marron-oscuro);
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.dibujo {
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.dibujo-rectangular {
+    width: 250px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.dibujo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*Redes*/
+.redes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+.red-social {
+    background-color: var(--amarillo);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    height: 320px;
+    box-sizing: border-box;
+}
+
+.red-social p {
+    min-height: 75px;
+    margin: 0;
+}
+
+.red-social a {
+    display: inline-block;
+    background-color: var(--crema);
+    color: var(--marron-oscuro);
+    border: 2px solid var(--marron-oscuro);
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.red-social a:hover {
+    background-color: var(--marron);
+    color: var(--crema);
+    transform: scale(1.05);
+}
+
+.red-social img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+
+/*Servidor de Discord*/
+.discord-enlace {
+    display: block;
+    background-color: var(--amarillo);
+    padding: 25px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+    margin: 40px auto 25px;
+    text-align: center;
+}
+
+.discord-enlace a {
+    display: inline-block;
+    background-color: var(--crema);
+    color: var(--marron-oscuro);
+    border: 3px solid var(--marron-oscuro);
+    box-sizing: border-box;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.discord-enlace a:hover {
+    background-color: var(--marron);
+    color: var(--crema);
+    transform: scale(1.05);
+}
+
+/*Adaptación a celular*/
+@media (max-width: 600px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    header nav h1 {
+        font-size: 25px;
+    }
+
+    header nav a {
+        margin: 5px;
+        padding: 8px;
+    }
+
+    section {
+        width: 95%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .introduccion {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    .introduccion h2 {
+        font-size: 20px;
+    }
+
+    .introduccion p {
+        font-size: 15px;
+    }
+
+    .introduccion img {
+        max-width: 100%;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        min-height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .informacion {
+        width: 100%;
+    }
+
+    .informacion h2 {
+        font-size: 25px;
+    }
+
+    .imagen-principal {
+        width: 100%;
+    }
+
+    .imagen-principal img {
+        width: 85%;
+    }
+
+    .galeria {
+        grid-template-columns: minmax(0, 250px);
+        gap: 20px;
+    }
+
+    .dibujo {
+        width: 100%;
+    }
+
+    .dibujo-rectangular {
+        width: 100%;
+    }
+
+    .redes {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .red-social {
+        width: 100%;
+    }
+
+    .discord-enlace {
+        padding: 20px;
+    }
+
+}
