@@ -74,6 +74,7 @@ section p {
 
 .introduccion {
     background-color: var(--amarillo);
+    border: 2px solid var(--marron_oscuro);
     padding: 20px;
     border-radius: 20px;
     text-align: center;
