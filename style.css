@@ -90,6 +90,7 @@ section p {
 
 /* Inicio */
 .presentacion {
+    border: 2px solid var(--marron-oscuro);
     display: flex;
     align-items: center;
     gap: 30px;
@@ -141,6 +142,7 @@ section p {
 
 .horario {
     background-color: var(--amarillo);
+    border: 2px solid var(--marron-oscuro);
     padding: 25px;
     border-radius: 20px;
     max-width: 700px;
@@ -149,10 +151,9 @@ section p {
 }
 
 .horario img {
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     height: auto;
-    display: block;
-    margin: 20px auto;
 }
 
 /*Portafolio*/
@@ -252,6 +253,7 @@ section p {
 
 .red-social {
     background-color: var(--amarillo);
+    border: 2px solid var(--marron-oscuro);
     padding: 20px;
     border-radius: 15px;
     display: flex;
@@ -302,6 +304,7 @@ section p {
 .discord-enlace {
     display: block;
     background-color: var(--amarillo);
+    border: 2px solid var(--marron-oscuro);
     padding: 25px;
     border-radius: 20px;
     width: 100%;
