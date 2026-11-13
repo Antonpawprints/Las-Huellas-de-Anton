@@ -70,27 +70,27 @@ section h2 {
     text-align: center;
 }
 
-section h2 {
+section p {
+    color: var(--marron);
+    line-height: 1.6;
+    text-align: center;
+}
+
+h2 {
     position: relative;
     text-align: center;
     color: var(--marron-oscuro);
     padding: 15px 0;
 }
 
-section h2::before,
-section h2::after {
+h2::before,
+h2::after {
     content: "━━━━━━ ⟡ ━━━━━━";
     display: block;
     color: var(--marron);
     font-size: 13px;
     letter-spacing: 2px;
     margin: 8px auto;
-}
-
-section p {
-    color: var(--marron);
-    line-height: 1.6;
-    text-align: center;
 }
 
 .introduccion {
