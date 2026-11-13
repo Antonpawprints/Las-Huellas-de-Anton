@@ -117,7 +117,6 @@ section p {
     color: var(--marron-oscuro);
     font-size: 36px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 0 var(--crema);
 }
 
 .informacion p {
@@ -151,7 +150,7 @@ section p {
 /*Sobre mí*/
 #sobre-mi .introduccion {
     padding: 30px;
-    background-color: var(--crema);
+    background-color: var(--amarillo);
     border: 3px solid var(--marron-oscuro);
     border-radius: 22px;
     box-shadow: 0 7px 0 var(--marron-oscuro);
@@ -160,7 +159,6 @@ section p {
 #sobre-mi .introduccion h2 {
     font-size: 30px;
     margin-bottom: 25px;
-    text-shadow: 2px 2px 0 var(--amarillo);
 }
 
 #sobre-mi .introduccion p {
@@ -185,7 +183,7 @@ section p {
 }
 
 #sobre-mi .horario {
-    background-color: var(--crema);
+    background-color: var(--amarillo);
     margin-top: 35px;
 }
 
@@ -214,12 +212,13 @@ section p {
 /*Portafolio*/
 .comisiones {
     background-color: var(--amarillo);
-    border: 2px solid var(--marron-oscuro);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 25px auto;
+    border: 3px solid var(--marron-oscuro);
+    border-radius: 18px;
+    padding: 25px;
+    margin: 30px auto;
     text-align: center;
     max-width: 700px;
+    box-shadow: 0 6px 0 var(--marron-oscuro);
 }
 
 .comisiones a {
@@ -228,25 +227,26 @@ section p {
     color: var(--marron-oscuro);
     border: 3px solid var(--marron-oscuro);
     box-sizing: border-box;
-    padding: 12px 25px;
+    padding: 13px 28px;
     border-radius: 12px;
     font-weight: bold;
-    transition: 0.3s;
     text-decoration: none;
+    box-shadow: 0 4px 0 var(--marron-oscuro);
+    transition: all 0.25s ease;
 }
 
 .comisiones a:hover {
     background-color: var(--marron);
     color: var(--crema);
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 7px 0 var(--marron-oscuro);
 }
-
 
 .galeria {
     display: grid;
-    grid-template-columns: repeat(2, 280px);
-    column-gap: 50px;
-    row-gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 280px));
+    column-gap: 35px;
+    row-gap: 30px;
     justify-content: center;
     width: 100%;
 }
@@ -257,36 +257,46 @@ section p {
     align-items: center;
     text-align: center;
     background-color: var(--amarillo);
-    padding: 15px;
-    border-radius: 15px;
-    border: 2px solid var(--marron);
+    padding: 18px;
+    border-radius: 18px;
+    border: 3px solid var(--marron-oscuro);
     box-sizing: border-box;
     width: 100%;
     min-width: 0;
+    box-shadow: 0 5px 0 var(--marron-oscuro);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.obra:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 0 var(--marron-oscuro);
 }
 
 .obra h3 {
     color: var(--marron-oscuro);
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 19px;
+    margin: 12px 0 5px;
     text-align: center;
 }
 
 .dibujo {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 250px;
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
-    border-radius: 12px;
+    background-color: var(--crema);
+    border: 2px solid var(--marron-oscuro);
+    border-radius: 14px;
     padding: 10px;
 }
 
 .dibujo-rectangular {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 350px;
     margin: 0 auto;
 }
