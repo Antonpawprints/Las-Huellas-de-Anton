@@ -405,14 +405,15 @@ h2::after {
 .discord-enlace {
     display: block;
     background-color: var(--amarillo);
-    border: 2px solid var(--marron-oscuro);
-    padding: 25px;
-    border-radius: 20px;
+    border: 3px solid var(--marron-oscuro);
+    padding: 30px;
+    border-radius: 22px;
     width: 100%;
     max-width: 700px;
     box-sizing: border-box;
-    margin: 40px auto 25px;
+    margin: 40px auto 30px;
     text-align: center;
+    box-shadow: 0 7px 0 var(--marron-oscuro);
 }
 
 .discord-enlace a {
@@ -421,17 +422,19 @@ h2::after {
     color: var(--marron-oscuro);
     border: 3px solid var(--marron-oscuro);
     box-sizing: border-box;
-    padding: 12px 25px;
+    padding: 13px 28px;
     border-radius: 12px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: all 0.25s ease;
     text-decoration: none;
+    box-shadow: 0 4px 0 var(--marron-oscuro);
 }
 
 .discord-enlace a:hover {
     background-color: var(--marron);
     color: var(--crema);
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 7px 0 var(--marron-oscuro);
 }
 
 /* Pie de página */
