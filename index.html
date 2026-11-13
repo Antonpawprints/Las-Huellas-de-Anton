@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="pagina-principal">
 
     <div class="reproductor-fijo">
-        <button id="boton-musica">▶</button>
+        <button id="boton-musica" aria-label="Reproducir Specialist">▶</button>
         <span>Specialist</span>
 
         <audio id="musica" loop>
@@ -19,11 +20,38 @@
     </div>
 
     <iframe
-    id="contenido"
-    name="contenido"
-    src="inicio.html"
-    title="Las Huellas de Anton">
+        id="contenido"
+        name="contenido"
+        src="inicio.html"
+        title="Las Huellas de Anton">
     </iframe>
+
+    <script>
+        const musica = document.getElementById("musica");
+        const boton = document.getElementById("boton-musica");
+
+        boton.addEventListener("click", async function() {
+            if (musica.paused) {
+                try {
+                    await musica.play();
+                    boton.textContent = "Ⅱ";
+                } catch (error) {
+                    console.log("No se pudo reproducir la canción.");
+                }
+            } else {
+                musica.pause();
+                boton.textContent = "▶";
+            }
+        });
+
+        musica.addEventListener("pause", function() {
+            boton.textContent = "▶";
+        });
+
+        musica.addEventListener("play", function() {
+            boton.textContent = "Ⅱ";
+        });
+    </script>
 
 </body>
 </html>
