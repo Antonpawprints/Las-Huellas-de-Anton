@@ -324,32 +324,47 @@ h2::after {
     object-fit: contain;
 }
 
-/*Redes*/
+/* Redes sociales */
 .redes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 30px;
     max-width: 700px;
-    margin: 25px auto;
+    margin: 35px auto;
 }
 
 .red-social {
     background-color: var(--amarillo);
-    border: 2px solid var(--marron-oscuro);
-    padding: 20px;
-    border-radius: 15px;
+    border: 3px solid var(--marron-oscuro);
+    padding: 25px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 10px;
+    gap: 12px;
     height: 320px;
     box-sizing: border-box;
+    box-shadow: 0 6px 0 var(--marron-oscuro);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.red-social:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 11px 0 var(--marron-oscuro);
+}
+
+.red-social h3 {
+    color: var(--marron-oscuro);
+    font-size: 21px;
+    margin: 5px 0;
 }
 
 .red-social p {
     min-height: 75px;
     margin: 0;
+    color: var(--marron);
+    line-height: 1.6;
 }
 
 .red-social a {
@@ -357,25 +372,27 @@ h2::after {
     background-color: var(--crema);
     color: var(--marron-oscuro);
     border: 2px solid var(--marron-oscuro);
-    padding: 10px 15px;
-    border-radius: 10px;
+    padding: 11px 20px;
+    border-radius: 12px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: all 0.25s ease;
     margin-top: 5px;
     max-width: 100%;
     box-sizing: border-box;
     text-decoration: none;
+    box-shadow: 0 3px 0 var(--marron-oscuro);
 }
 
 .red-social a:hover {
     background-color: var(--marron);
     color: var(--crema);
-    transform: scale(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 0 var(--marron-oscuro);
 }
 
 .red-social img {
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     object-fit: contain;
     display: block;
     margin: 0 auto;
