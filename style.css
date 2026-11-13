@@ -457,21 +457,32 @@ footer p {
 }
 
 /* Reproductor de música */
-.reproductor {
+.reproductor-fijo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
     background-color: var(--amarillo);
+    color: var(--marron-oscuro);
     border: 2px solid var(--marron-oscuro);
     border-radius: 15px;
-    padding: 10px 15px;
-    width: fit-content;
-    max-width: 90%;
-    margin: 25px auto;
     box-shadow: 0 4px 0 var(--marron-oscuro);
+    font-weight: bold;
 }
 
-.reproductor audio {
-    display: block;
-    width: 250px;
-    max-width: 100%;
+#boton-musica {
+    background-color: var(--marron-oscuro);
+    color: var(--crema);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 15px;
 }
 
 /*Adaptación a celular*/
