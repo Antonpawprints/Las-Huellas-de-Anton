@@ -149,6 +149,28 @@ section p {
 }
 
 /*Sobre mí*/
+#sobre-mi .introduccion {
+    padding: 30px;
+    background-color: var(--crema);
+    border: 3px solid var(--marron-oscuro);
+    border-radius: 22px;
+    box-shadow: 0 7px 0 var(--marron-oscuro);
+}
+
+#sobre-mi .introduccion h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 0 var(--amarillo);
+}
+
+#sobre-mi .introduccion p {
+    color: var(--marron-oscuro);
+    font-size: 17px;
+    line-height: 1.9;
+    max-width: 600px;
+    margin: 15px auto;
+}
+
 .introduccion img {
     display: block;
     width: 100%;
@@ -160,6 +182,11 @@ section p {
     border-radius: 15px;
     outline: 2px solid var(--marron-oscuro);
     box-shadow: 0 6px 14px rgba(111, 57, 0, 0.20);
+}
+
+#sobre-mi .horario {
+    background-color: var(--crema);
+    margin-top: 35px;
 }
 
 .horario {
